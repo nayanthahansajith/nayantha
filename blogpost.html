@@ -3,74 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <title>WebSites</title>
+    <style>
+        /* CSS */
+        .article-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .image-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 2px solid #eee;
+        }
+
+        .image-caption {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .caption-title {
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .caption-text {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+
+        }
+
+        .hero-btn2{
+            display: inline-block;
+            text-decoration: none;
+    
+            color: #3b4bff;
+            border: 1px solid #3b4bff;
+            border-radius: 10px;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        .hero-btn2:hover{
+            border: 1px solid#011542;
+            background:#011542;
+            color: #f5f5f5;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .article-image {
+                height: 200px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <section class="discover-section">
-        <h2 class="section-title">BLOG POST</h2>
+    <section class="post">
+    <div class="article-container">
+        <div class="image-grid">
+            <!-- Image Card 1 -->
+            <div class="image-card">
+                <img src="portfolio/Untitled-2.jpg" alt="Article image 1" class="article-image">
+                <div class="image-caption">
+                    <div class="caption-title">Smart Fire Alert</div>
+                    <div><p>This Arduino-based fire alert system detects fire in your home and instantly sends an SMS notification to the house owner for immediate action and safety response.</p></div>
+                    <div class="caption-text"> <a href="Blogpost/post1/" class="hero-btn2">See More...</a></div>
+                </div>
+                
+            </div>
+           
+            </div>
+        </div>
+    </div>
+    <div class="article-container">
         
-        <div class="image-grid">
-            <!-- Image Card 1 -->
-            <div class="image-card">
-                <img src="image/web.jpg" alt="Discovery 1" class="grid-image">
-                <div class="image-caption">
-                    <h3 class="caption-heading">Web development</h3>
-                    <div><a href="webwork.html" class="hero-btn-temp">Visit</a></div>
-                </div>
-            </div>
-
-            <!-- Image Card 2 -->
-            <div class="image-card">
-                <img src="image/design.jpg" alt="Discovery 2" class="grid-image">
-                <div class="image-caption">
-                    <h3 class="caption-heading">Design</h3>
-                    <div><a href="https://neographi.blogspot.com/" class="hero-btn-temp">Visit</a></div>
-                </div>
-            </div>
-
-            <!-- Image Card 3 -->
-            <div class="image-card">
-                <img src="image/electronic.jpg" alt="Discovery 3" class="grid-image">
-                <div class="image-caption">
-                    <h3 class="caption-heading">Electrical & Electronic</h3>
-                    <div><a href="electrical.html" class="hero-btn-temp">Visit</a></div>
-                </div>
-            </div>
-
-            </div>
-        </div>
-        <br>
-        <div class="image-grid">
-            <!-- Image Card 1 -->
-            <div class="image-card">
-                <img src="image/web.jpg" alt="Discovery 1" class="grid-image">
-                <div class="image-caption">
-                    <h3 class="caption-heading">Web development</h3>
-                    <div><a href="webwork.html" class="hero-btn-temp">Visit</a></div>
-                </div>
-            </div>
-
-            <!-- Image Card 2 -->
-            <div class="image-card">
-                <img src="image/design.jpg" alt="Discovery 2" class="grid-image">
-                <div class="image-caption">
-                    <h3 class="caption-heading">Design</h3>
-                    <div><a href="https://neographi.blogspot.com/" class="hero-btn-temp">Visit</a></div>
-                </div>
-            </div>
-
-            <!-- Image Card 3 -->
-            <div class="image-card">
-                <img src="image/electronic.jpg" alt="Discovery 3" class="grid-image">
-                <div class="image-caption">
-                    <h3 class="caption-heading">Electrical & Electronic</h3>
-                    <div><a href="electrical.html" class="hero-btn-temp">Visit</a></div>
-                </div>
-            </div>
-
-            </div>
-        </div>
+        
+    </div>
     </section>
 </body>
 </html>

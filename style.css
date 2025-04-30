@@ -21,9 +21,9 @@
 
 
 .logo img {
-    width: 375px;
-    height: 225px;
-    margin-top: -45px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
 }
 
 @keyframes showContent {
