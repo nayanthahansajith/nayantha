@@ -60,6 +60,10 @@ body {
     text-align: center;
 }
 
+.image-caption p {
+    text-align: justify;
+}
+
 .caption-heading {
     color: #2d3436;
     font-size: 1.4rem;
