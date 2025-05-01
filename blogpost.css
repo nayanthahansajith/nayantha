@@ -86,8 +86,9 @@ body {
     padding: 12px 34px;
     font-size: 13px;
     background:#3f6cff ;
-    position: relative;
+    
     cursor: pointer;
+    margin-bottom: 5px;
 }
 
 .hero-btn-temp:hover{
