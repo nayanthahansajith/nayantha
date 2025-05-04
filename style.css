@@ -270,6 +270,8 @@
         font-size: 24px;
         height: 30px;
         margin-bottom: 20px;
+        align-items: center;
+        align-content: center;
     }
 
     .home-info p {
@@ -304,13 +306,17 @@
     *{
         background: #1f242d;
     }
+    .navbar{
+        margin-top: -30%;
+    }
     .home-info h1 {
         font-size: 32px;
-        margin-top: 35%;
+        margin-top: 2%;
     }
 
     .home-info h2 {
         font-size: 20px;
+        
     }
 
     .navbar ul li a {
